@@ -86,9 +86,19 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                  http://52.66.67.110:9000/
+                  http://3.111.157.142:9000/
                 </sonar.host.url>
             </properties>
         </profile>
      </profiles>
+     <distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://13.127.96.31:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus-releases</id>
+     <url>http://13.127.96.31:8081/repository/maven-releases/</url>
+    </repository> 
+  </distributionManagement>
 </project>
